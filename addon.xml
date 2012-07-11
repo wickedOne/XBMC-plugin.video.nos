@@ -13,6 +13,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
+    <language>nl</language>
     <summary lang="en">Watch videos from NOS (Dutch news service)</summary>
     <summary lang="nl">Bekijk videos van de NOS</summary>
     <description lang="en">Watch videos from various NOS sites. For feature requests and bug reports: erwin@junge.nl</description>
