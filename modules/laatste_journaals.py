@@ -24,7 +24,7 @@ import xbmcgui
 import urllib2
 import re
 import sys
-import requests
+import json
 
 link_re = re.compile(r'<a href="video.*?</a>', re.S)
 video_re = re.compile(r'nos\.nl/embed/\?id=b2:([0-9]+)')
@@ -47,7 +47,7 @@ def scan(params):
     img = URL + '/browser/' + img_re.search(a).group(1).strip()
     title = title + ' - ' + meta
     playlist_url = playlist_format.format(int(video_url))
-    playlist = requests.get(playlist_url).json()
+    playlist = json.loads(urllib2.urlopen(playlist_url).read())
     video_url = playlist['videofile']
     addLink(title, video_url, img)
   xbmcplugin.endOfDirectory(int(sys.argv[1]))
