@@ -19,5 +19,11 @@
     <description lang="en">Watch videos from various NOS sites. For feature requests and bug reports: erwin@junge.nl</description>
     <description lang="nl">Bekijk videos van verscheidene NOS sites. Voor functie verzoeken en het rapporteren van bugs: erwin@junge.nl</description>
     <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <source>https://github.com/ErwinJunge/XBMC-plugin.video.nos</source>
+    <email>erwin@junge.nl</email>
+    <disclaimer></disclaimer>
   </extension>
 </addon>
